@@ -1,7 +1,11 @@
 body {
   background: black;
   color: white;
-  font-style: oblique;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav {
+  opacity: 0.8;
 }
 
 i {
@@ -27,4 +31,18 @@ label {
 #wood-p {
   height: 500px;
   overflow: scroll;
+}
+
+.img-fluid {
+  border-radius: 30px;
+}
+
+#intro {
+  background: url(img/guitarshadow.jpg);
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.text-danger {
+  text-shadow: 1px 1px 1px #fff;
 }

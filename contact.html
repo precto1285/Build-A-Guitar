@@ -51,32 +51,32 @@
   <!-- CONTACT SECTION -->
 
   <section id="contact-section">
-    <div class="container bg-dark mt-5">
-      <div class="row py-5">
-        <div class="col align-self-center text-white">
-          <div class="card">
-            <div id="contact-head" class="card-hearder text-primary text-center pt-5">
-              <img src="img/Logo.png" alt="" width="30%" class="img-fluid">
-              <h3>Please Contact Us For More Information:</h3>
-            </div>
-            <div class="card-body bg-dark">
-              <form>
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input class="form-control" type="text" id="name" placeholder="Enter Name">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter Email">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="" id="message" placeholder="Message" rows=10></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                </div>
-              </form>
-            </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col align-self-center">
+          <div class="card-body text-danger text-center pt-5">
+            <img src="img/Logo.png" alt="" width="30%" class="img-fluid">
+            <img src="img/guitarshadow.jpg" width="40%" alt="" class="img-fluid">
+            <h3>Please Contact Us For More Information:</h3>
+
+            <form>
+              <div class="form-group">
+                <label class="text-white" for="name">First &amp; Last Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label class="text-white" for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label class="text-white" for="email">Message</label>
+                <textarea class="form-control" name="" id="message" placeholder="Message" rows=10></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-response">Submit</button>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
@@ -102,11 +102,33 @@
         </div>
       </div>
     </div>
+
   </footer>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal-response">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thank You!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="lead text-dark">We will respond to your request in 48 hours via your preferred contact method. If no response by then, please contact
+            us at (555)-555-5555</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
