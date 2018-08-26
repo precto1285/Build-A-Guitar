@@ -14,225 +14,86 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
+
 </head>
 
 <body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Alethean Guitars</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#customize-section" class="nav-link active">Customize</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
 
-  <!-- NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">Alethean Guitars</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about-section" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio-section" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#customize-section" class="nav-link active">Customize</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact-section" class="nav-link">Contact</a>
-          </li>
-
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- CUSTOMIZE SECTION -->
-  <div class="container py-5">
-    <section id="customize-section">
-      <div class="dark-overlay">
-        <div class="home-inner container">
-          <div class="row">
-            <div class="col">
+    <!-- CUSTOMIZE SECTION -->
+    <div class="container py-5">
+      <section id="customize-section">
+        <div class="dark-overlay">
+          <div class="home-inner container">
+            <div class="row">
+              <div class="col">
+                <h1 class="text-center">Pick An Instrument And Fill Out Form For Quote:</h1>
+                <div id="accordion">
 
-              <div id="accordion">
-
-                <!-- Guitar Form -->
-                <div class="card">
-                  <div class="card-header">
-                    <h5>
-                      <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">Electric Guitar</a>
-                    </h5>
-                  </div>
-                  <div id="collapse1" class="collapse">
-                    <div class="card-body">
-                      <form>
-                        <div class="form-group">
-                          <label for="name">Name</label>
-                          <input class="form-control" type="text" id="name" placeholder="Enter Name">
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email Address</label>
-                          <input type="email" class="form-control" id="email" placeholder="Enter Email">
-                        </div>
-
-                        <hr>
-
-                        <div class="form-group">
-                          <label for="guitar-shape">Guitar Shape</label>
-                          <select id="guitar-shape" class="form-control">
-                            <option>Single-cutaway (Les Paul)</option>
-                            <option>Double-cutaway (SG)</option>
-                            <option>Ergonomic (Strat-Style)</option>
-                            <option>Flying V</option>
-                            <option>Explorer</option>
-                            <option>Other</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="wood-body">Wood (Body)</label>
-                          <select id="wood-body" class="form-control">
-                            <option>Ash</option>
-                            <option>Maple</option>
-                            <option>Rosewood</option>
-                            <option>Other</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="wood-neck">Wood (Neck)</label>
-                          <select id="wood-neck" class="form-control">
-                            <option>Ash</option>
-                            <option>Maple</option>
-                            <option>Rosewood</option>
-                            <option>Other</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="style">Guitar Style</label>
-                          <select id="style" class="form-control">
-                            <option>Bolt-On</option>
-                            <option>Thru Body</option>
-                          </select>
-                        </div>
-
-
-                        <div class="form-group">
-                          <label for="fretboard">Fretboard</label>
-                          <select id="fretboard" class="form-control">
-                            <option>Maple</option>
-                            <option>Rosewood</option>
-                            <option>Other</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="headstock">Headstock</label>
-                          <select id="headstock" class="form-control">
-                            <option>3 and 3</option>
-                            <option>6 inline</option>
-                            <option>Headless</option>
-                            <option>Other</option>
-                          </select>
-                        </div>
-
-
-                        <div class="form-group">
-                          <label for="nut">Nut</label>
-                          <select id="nut" class="form-control">
-                            <option>Bone</option>
-                            <option>Locking</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="tuning-machinery">Tuning Machinery</label>
-                          <select id="tuning-machinery" class="form-control">
-                            <option>Locking</option>
-                            <option>Non-Locking</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="hardware-style">Hardware-Style</label>
-                          <select id="hardware-style" class="form-control">
-                            <option>Chrome</option>
-                            <option>Nickel-Plated</option>
-                            <option>Gold</option>
-                            <option>Black</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="bridge-hardware">Bridge Hardware</label>
-                          <select id="bridge-hardware" class="form-control">
-                            <option>Gibson Saddle</option>
-                            <option>Strat Hardtail</option>
-                            <option>Bigsby</option>
-                            <option>Strat Whammy</option>
-                            <option>Tele Saddle</option>
-                            <option>FLoyd Rose</option>
-                          </select>
-                        </div>
-
-                        <hr>
-
-                        <div class="form-group">
-                          <label for="pick-up-setup">Pick Up Setup</label>
-                          <select id="pick-up-setup" class="form-control">
-                            <option>SS</option>
-                            <option>HS</option>
-                            <option>HH</option>
-                            <option>SSS</option>
-                            <option>HSS</option>
-                            <option>HSH</option>
-                            <option>H-bridge only</option>
-                            <option>H-neck only</option>
-                            <option>S-bridge only</option>
-                            <option>S-neck only</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="pick-up-power">Pick Up Power</label>
-                          <select id="pick-up-power" class="form-control">
-                            <option>Active</option>
-                            <option>Passive</option>
-                          </select>
-                        </div>
-
-                      </form>
-                    </div>
-                  </div>
-
-                  <!-- Bass Guitar Form -->
+                  <!-- Guitar Form -->
                   <div class="card">
                     <div class="card-header">
                       <h5>
-                        <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">Bass Guitar</a>
+                        <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">Electric Guitar</a>
                       </h5>
                     </div>
-                    <div id="collapse2" class="collapse">
+                    <div id="collapse1" class="collapse">
                       <div class="card-body">
-
                         <form>
-                          <div class="form-group">
-                            <label for="name">Name</label>
-                            <input class="form-control" type="text" id="name" placeholder="Enter Name">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="name">Name</label>
+                                <input class="form-control" type="text" id="name" placeholder="Enter Name">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="Phone">Phone</label>
+                                <input class="form-control" type="text" id="name" placeholder="Enter Phone">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Best Method of Contact</label>
+                                <select id="style" class="form-control">
+                                  <option>Call</option>
+                                  <option>Text</option>
+                                  <option>Email</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
-                          <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
-                          </div>
-
                           <hr>
 
                           <div class="form-group">
-                            <label for="bass-body">Bass Body</label>
-                            <select id="bass-body" class="form-control">
+                            <label for="guitar-shape">Guitar Shape</label>
+                            <select id="guitar-shape" class="form-control">
                               <option>Single-cutaway (Les Paul)</option>
                               <option>Double-cutaway (SG)</option>
                               <option>Ergonomic (Strat-Style)</option>
@@ -241,6 +102,35 @@
                               <option>Other</option>
                             </select>
                           </div>
+
+                          <div class="form-group">
+                            <label for="wood-body">Wood (Body)</label>
+                            <select id="wood-body" class="form-control">
+                              <option>Ash</option>
+                              <option>Maple</option>
+                              <option>Rosewood</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="wood-neck">Wood (Neck)</label>
+                            <select id="wood-neck" class="form-control">
+                              <option>Ash</option>
+                              <option>Maple</option>
+                              <option>Rosewood</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="style">Guitar Style</label>
+                            <select id="style" class="form-control">
+                              <option>Bolt-On</option>
+                              <option>Thru Body</option>
+                            </select>
+                          </div>
+
 
                           <div class="form-group">
                             <label for="fretboard">Fretboard</label>
@@ -254,22 +144,27 @@
                           <div class="form-group">
                             <label for="headstock">Headstock</label>
                             <select id="headstock" class="form-control">
-                              <option>4 inline</option>
-                              <option>5 inline</option>
-                              <option>6 inline</option>
-                              <option>2 and 2</option>
-                              <option>3 and 1</option>
-                              <option>3 and 2</option>
                               <option>3 and 3</option>
+                              <option>6 inline</option>
+                              <option>Headless</option>
                               <option>Other</option>
+                            </select>
+                          </div>
+
+
+                          <div class="form-group">
+                            <label for="nut">Nut</label>
+                            <select id="nut" class="form-control">
+                              <option>Bone</option>
+                              <option>Locking</option>
                             </select>
                           </div>
 
                           <div class="form-group">
                             <label for="tuning-machinery">Tuning Machinery</label>
                             <select id="tuning-machinery" class="form-control">
-                              <option>Elephant Ears</option>
-                              <option>Modern</option>
+                              <option>Locking</option>
+                              <option>Non-Locking</option>
                             </select>
                           </div>
 
@@ -299,18 +194,17 @@
 
                           <div class="form-group">
                             <label for="pick-up-setup">Pick Up Setup</label>
-                            <select id="headstock" class="form-control">
-                              <option>P Split</option>
-                              <option>PJ</option>
-                              <option>Jazz SS</option>
+                            <select id="pick-up-setup" class="form-control">
+                              <option>SS</option>
                               <option>HS</option>
                               <option>HH</option>
-                              <option>Soapbar HH</option>
+                              <option>SSS</option>
+                              <option>HSS</option>
+                              <option>HSH</option>
                               <option>H-bridge only</option>
                               <option>H-neck only</option>
-                              <option>H-middle only</option>
-                              <option>S-middle only</option>
-                              <option>Other</option>
+                              <option>S-bridge only</option>
+                              <option>S-neck only</option>
                             </select>
                           </div>
 
@@ -321,9 +215,150 @@
                               <option>Passive</option>
                             </select>
                           </div>
-
+                          <div class="form-group">
+                            <button type="submit" value="submit" class="btn btn-primary btn-block">Submit</button>
+                          </div>
                         </form>
+                      </div>
+                    </div>
 
+                    <!-- Bass Guitar Form -->
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>
+                          <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">Bass Guitar</a>
+                        </h5>
+                      </div>
+                      <div id="collapse2" class="collapse">
+                        <div class="card-body">
+
+                          <form>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="name">Name</label>
+                                  <input class="form-control" type="text" id="name" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="email">Email Address</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="Phone">Phone</label>
+                                  <input class="form-control" type="text" id="name" placeholder="Enter Phone">
+                                </div>
+                                <div class="form-group">
+                                  <label for="email">Best Method of Contact</label>
+                                  <select id="style" class="form-control">
+                                    <option>Call</option>
+                                    <option>Text</option>
+                                    <option>Email</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group">
+                              <label for="bass-body">Bass Body</label>
+                              <select id="bass-body" class="form-control">
+                                <option>Single-cutaway (Les Paul)</option>
+                                <option>Double-cutaway (SG)</option>
+                                <option>Ergonomic (Strat-Style)</option>
+                                <option>Flying V</option>
+                                <option>Explorer</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="fretboard">Fretboard</label>
+                              <select id="fretboard" class="form-control">
+                                <option>Maple</option>
+                                <option>Rosewood</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="headstock">Headstock</label>
+                              <select id="headstock" class="form-control">
+                                <option>4 inline</option>
+                                <option>5 inline</option>
+                                <option>6 inline</option>
+                                <option>2 and 2</option>
+                                <option>3 and 1</option>
+                                <option>3 and 2</option>
+                                <option>3 and 3</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="tuning-machinery">Tuning Machinery</label>
+                              <select id="tuning-machinery" class="form-control">
+                                <option>Elephant Ears</option>
+                                <option>Modern</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="hardware-style">Hardware-Style</label>
+                              <select id="hardware-style" class="form-control">
+                                <option>Chrome</option>
+                                <option>Nickel-Plated</option>
+                                <option>Gold</option>
+                                <option>Black</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="bridge-hardware">Bridge Hardware</label>
+                              <select id="bridge-hardware" class="form-control">
+                                <option>Gibson Saddle</option>
+                                <option>Strat Hardtail</option>
+                                <option>Bigsby</option>
+                                <option>Strat Whammy</option>
+                                <option>Tele Saddle</option>
+                                <option>FLoyd Rose</option>
+                              </select>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group">
+                              <label for="pick-up-setup">Pick Up Setup</label>
+                              <select id="headstock" class="form-control">
+                                <option>P Split</option>
+                                <option>PJ</option>
+                                <option>Jazz SS</option>
+                                <option>HS</option>
+                                <option>HH</option>
+                                <option>Soapbar HH</option>
+                                <option>H-bridge only</option>
+                                <option>H-neck only</option>
+                                <option>H-middle only</option>
+                                <option>S-middle only</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="pick-up-power">Pick Up Power</label>
+                              <select id="pick-up-power" class="form-control">
+                                <option>Active</option>
+                                <option>Passive</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <button type="submit" value="submit" class="btn btn-primary btn-block">Submit</button>
+                            </div>
+                          </form>
+
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -332,30 +367,29 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 
-  <footer id="main-footer" class="bg-dark text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col text-center py-4">
-          <h3>Alethean Guitars</h3>
-          <p>Copyright &copy;
-            <span id="year"></span>
-          </p>
-          <hr>
-          <p>PO Box 6969
-            <br> Mission Viejo, CA
-            <br> (555)555-5555
-          </p>
+    <footer id="main-footer" class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>Alethean Guitars</h3>
+            <p>Copyright &copy;
+              <span id="year"></span>
+            </p>
+            <hr>
+            <p>PO Box 6969
+              <br> Mission Viejo, CA
+              <br> (555)555-5555
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
