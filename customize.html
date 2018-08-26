@@ -57,6 +57,8 @@
             <div class="col">
 
               <div id="accordion">
+
+                <!-- Guitar Form -->
                 <div class="card">
                   <div class="card-header">
                     <h5>
@@ -78,8 +80,8 @@
                         <hr>
 
                         <div class="form-group">
-                          <label for="guitar-body">Guitar Body</label>
-                          <select id="guitar-body" class="form-control">
+                          <label for="guitar-shape">Guitar Shape</label>
+                          <select id="guitar-shape" class="form-control">
                             <option>Single-cutaway (Les Paul)</option>
                             <option>Double-cutaway (SG)</option>
                             <option>Ergonomic (Strat-Style)</option>
@@ -88,6 +90,35 @@
                             <option>Other</option>
                           </select>
                         </div>
+
+                        <div class="form-group">
+                          <label for="wood-body">Wood (Body)</label>
+                          <select id="wood-body" class="form-control">
+                            <option>Ash</option>
+                            <option>Maple</option>
+                            <option>Rosewood</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="wood-neck">Wood (Neck)</label>
+                          <select id="wood-neck" class="form-control">
+                            <option>Ash</option>
+                            <option>Maple</option>
+                            <option>Rosewood</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="style">Guitar Style</label>
+                          <select id="style" class="form-control">
+                            <option>Bolt-On</option>
+                            <option>Thru Body</option>
+                          </select>
+                        </div>
+
 
                         <div class="form-group">
                           <label for="fretboard">Fretboard</label>
@@ -103,16 +134,47 @@
                           <select id="headstock" class="form-control">
                             <option>3 and 3</option>
                             <option>6 inline</option>
+                            <option>Headless</option>
                             <option>Other</option>
                           </select>
                         </div>
 
+
                         <div class="form-group">
-                          <label for="headstock">Headstock</label>
-                          <select id="headstock" class="form-control">
-                            <option>3 and 3</option>
-                            <option>6 inline</option>
-                            <option>Other</option>
+                          <label for="nut">Nut</label>
+                          <select id="nut" class="form-control">
+                            <option>Bone</option>
+                            <option>Locking</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="tuning-machinery">Tuning Machinery</label>
+                          <select id="tuning-machinery" class="form-control">
+                            <option>Locking</option>
+                            <option>Non-Locking</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="hardware-style">Hardware-Style</label>
+                          <select id="hardware-style" class="form-control">
+                            <option>Chrome</option>
+                            <option>Nickel-Plated</option>
+                            <option>Gold</option>
+                            <option>Black</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="bridge-hardware">Bridge Hardware</label>
+                          <select id="bridge-hardware" class="form-control">
+                            <option>Gibson Saddle</option>
+                            <option>Strat Hardtail</option>
+                            <option>Bigsby</option>
+                            <option>Strat Whammy</option>
+                            <option>Tele Saddle</option>
+                            <option>FLoyd Rose</option>
                           </select>
                         </div>
 
@@ -120,12 +182,13 @@
 
                         <div class="form-group">
                           <label for="pick-up-setup">Pick Up Setup</label>
-                          <select id="headstock" class="form-control">
+                          <select id="pick-up-setup" class="form-control">
+                            <option>SS</option>
+                            <option>HS</option>
                             <option>HH</option>
                             <option>SSS</option>
                             <option>HSS</option>
-                            <option>HH</option>
-                            <option>SS</option>
+                            <option>HSH</option>
                             <option>H-bridge only</option>
                             <option>H-neck only</option>
                             <option>S-bridge only</option>
@@ -144,6 +207,8 @@
                       </form>
                     </div>
                   </div>
+
+                  <!-- Bass Guitar Form -->
                   <div class="card">
                     <div class="card-header">
                       <h5>
@@ -152,7 +217,7 @@
                     </div>
                     <div id="collapse2" class="collapse">
                       <div class="card-body">
-                        <!-- Add Form & Remove 'p' tags -->
+
                         <form>
                           <div class="form-group">
                             <label for="name">Name</label>
@@ -166,8 +231,8 @@
                           <hr>
 
                           <div class="form-group">
-                            <label for="guitar-body">Guitar Body</label>
-                            <select id="guitar-body" class="form-control">
+                            <label for="bass-body">Bass Body</label>
+                            <select id="bass-body" class="form-control">
                               <option>Single-cutaway (Les Paul)</option>
                               <option>Double-cutaway (SG)</option>
                               <option>Ergonomic (Strat-Style)</option>
@@ -189,18 +254,44 @@
                           <div class="form-group">
                             <label for="headstock">Headstock</label>
                             <select id="headstock" class="form-control">
-                              <option>3 and 3</option>
+                              <option>4 inline</option>
+                              <option>5 inline</option>
                               <option>6 inline</option>
+                              <option>2 and 2</option>
+                              <option>3 and 1</option>
+                              <option>3 and 2</option>
+                              <option>3 and 3</option>
                               <option>Other</option>
                             </select>
                           </div>
 
                           <div class="form-group">
-                            <label for="headstock">Headstock</label>
-                            <select id="headstock" class="form-control">
-                              <option>3 and 3</option>
-                              <option>6 inline</option>
-                              <option>Other</option>
+                            <label for="tuning-machinery">Tuning Machinery</label>
+                            <select id="tuning-machinery" class="form-control">
+                              <option>Elephant Ears</option>
+                              <option>Modern</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="hardware-style">Hardware-Style</label>
+                            <select id="hardware-style" class="form-control">
+                              <option>Chrome</option>
+                              <option>Nickel-Plated</option>
+                              <option>Gold</option>
+                              <option>Black</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="bridge-hardware">Bridge Hardware</label>
+                            <select id="bridge-hardware" class="form-control">
+                              <option>Gibson Saddle</option>
+                              <option>Strat Hardtail</option>
+                              <option>Bigsby</option>
+                              <option>Strat Whammy</option>
+                              <option>Tele Saddle</option>
+                              <option>FLoyd Rose</option>
                             </select>
                           </div>
 
@@ -209,15 +300,17 @@
                           <div class="form-group">
                             <label for="pick-up-setup">Pick Up Setup</label>
                             <select id="headstock" class="form-control">
+                              <option>P Split</option>
+                              <option>PJ</option>
+                              <option>Jazz SS</option>
+                              <option>HS</option>
                               <option>HH</option>
-                              <option>SSS</option>
-                              <option>HSS</option>
-                              <option>HH</option>
-                              <option>SS</option>
+                              <option>Soapbar HH</option>
                               <option>H-bridge only</option>
                               <option>H-neck only</option>
-                              <option>S-bridge only</option>
-                              <option>S-neck only</option>
+                              <option>H-middle only</option>
+                              <option>S-middle only</option>
+                              <option>Other</option>
                             </select>
                           </div>
 

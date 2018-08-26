@@ -19,7 +19,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <nav id="main-nav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a href="#" class="navbar-brand">Alethean Guitars</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link active">Home</a>
+            <a href="#home-section" class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
             <a href="#about-section" class="nav-link">About</a>
@@ -236,6 +236,30 @@
       keyboard: true,
       pasue: 'hover',
       wrap: true
+    });
+
+    //Scrollspy
+    $('body').scrollspy({
+      target: '#main-nav'
+    });
+
+    //Add smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+      //Check for a hash value
+      if (this.hash !== '') {
+        // Prevent default behavior
+        e.preventDefault();
+
+        // Store hash
+        const hash = this.hash;
+
+        // Animate smooth scroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function () {
+          window.location.hash = hash;
+        });
+      }
     });
   </script>
 </body>
