@@ -1,0 +1,10 @@
+body {
+  background: lightgrey;
+  color: white;
+}
+
+i {
+  background: grey;
+  padding: 3px;
+  border-radius: 10px;
+}
