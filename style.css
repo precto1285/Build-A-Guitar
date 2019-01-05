@@ -59,3 +59,7 @@ label {
 #mainBody {
   margin-bottom: 60px;
 }
+
+.modal-dialog {
+  max-width: 1000px;
+}
