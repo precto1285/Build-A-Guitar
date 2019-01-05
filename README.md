@@ -6,8 +6,8 @@ HTML5
 CSS3
 Bootstrap
 
-##Authors
+## Authors
 Philippe Recto
 
-##Acknowledgments
+## Acknowledgments
 Thank you Brad Hussey for your lessons on Bootstrap4.
